@@ -1,0 +1,255 @@
+/* CSS *//* Toutes les propriétés insérées dans body vont s'appliquer dans le corps de la page */
+
+* {
+    overflow: auto;
+}
+
+body { 
+
+    background-color: #8BA1BB;
+    font-family: "arial"; /* font-family: Police d'écriture */
+
+}
+
+
+p.categorie {     
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: -15px;
+    padding: 8px 18px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    
+
+                /*
+                    s'applique à l'ensemble des paragraphes / LES SELECTEURS: id, class, sont utilisés pour indiquer à    quel élément nous voulons appliquer des propriétés, l'id concerne un seul élément, tandis que class concerne un   ensemble d'éléments, pour cibler un id ou une class, nous devons spécifier au nom du tag dans la partie CSS un '#'  suivi du nom de l'id, ou nous pouvons simplement spécifier '#nomduId' pour que toutes les propriétés soient       appliquées au niveau de tous les tags concernée par l'id en question, pour class, ce ne sont pas le '#' que nous allons utiliser mais un '.', possibilité également de mentionner uniquement '.nomdelaclass'. Nous pouvons spécifier un autre type de tag dans le même bloc CSS. exemple : p.nomdelaclass, h1.nomdelaclass 
+
+                    'DISPLAY': cette propriété a 3 fonctions principales:
+                    'block': pour signifier que toute la ligne doit être occupée;
+                    'inline': occupe la place nécéssaire et autorise les autres éléments à s'afficher par derrière, quasi aucun contrôle au niveau des marges.
+                    'inline-block': même effet que 'inline' mais possibilité de contrôle au niveau des marges et des tags.
+                */
+
+}
+
+
+div.contenu {       
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 60px 10% 80px 10%;
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;
+    overflow: visible;
+
+                /* 
+                    'margin': propriété utilisée pour définir la marge.
+                    margin: verticalepx, horizontalpx,
+                    margin: hautpx, droitepx, baspx, gauchepx
+                    Pour que la marge s'adapte  *à l'étirement de la page :
+                    margin: nbpx, nb%, nbpx, nb%
+
+                    'padding': propriété utilisée pour définir la marge à l'intérieure du contenu.
+                    'width': propriété utilisée pour définir la largeur de l'élément.
+
+                    astuce : Quand survient un problème en layout, utiliser un background-color pour vérifier la position de l'élément.
+
+                    Quand nous définissons un padding maximal, le text-align est susceptible de ne plus fonctionner,
+                    pour corriger ce problème, nous allons encadrer notre élément dans une div. Ensuite nous allons utiliser une propriété qui s'appel 'display' pour centrer l'élément en question.
+                */
+}
+
+
+h1 
+{
+
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 10px;
+
+}
+
+
+p.description 
+{
+
+    text-align: center;
+    max-width: 400px;
+    display: inline-block;
+    font-size: 14px;
+
+}
+
+
+.centre 
+{
+
+    text-align: center;
+    width: 100%;
+
+}
+
+
+div.categorie
+{
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+
+div.separateur
+{
+
+    height: 1px;
+    width: 100px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table.info
+{
+
+    position: absolute; 
+    bottom: 0;
+    width:100%;
+    color:white;
+    background-color: #6C829DC0;
+    height: 80px; 
+
+}
+
+div.info
+{
+
+    position: relative;
+
+}
+
+table.info td   
+/* 
+Nous pouvons spécifier un tag à l'intérieur d'une div après avoir définit une class.
+syntaxe : tag.nomdeclass nomdutag
+verticale-align: top, aligne le texte vers le haut, inverse pour bottom.
+object-fit: cover : permet à une image de garder sa proportion tout en respectant le reste du contenu.
+float: pour afficher une div dans un coté(Droite, ou gauche)
+*/
+
+{
+
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+
+}
+
+table.info th
+{
+
+    font-size: 16 px;
+    vertical-align: bottom;
+    padding-bottom: 4px;
+
+}
+
+img.info
+{
+
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: grey;
+
+}
+
+
+div.colonne
+{
+
+    width: 45%;     /* permet au contenu de s'ajuster */
+    margin-top: 20px;
+}
+
+
+div.colonne h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 10px solid #6C829D;
+    padding-bottom: 5px;
+
+}
+
+div.colonne1
+{
+
+    display: inline-block;
+    margin-right: 10%;
+
+}
+
+div.colonne2
+{
+
+    float: right;
+
+}
+
+div.bordure p
+{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid lightgray;
+    padding: 8px 0;
+    margin-top: 4px;
+    margin-bottom: 0;   
+}
+
+table.preparation p.numero
+{
+    /* box-sizing: border-box - permet de garder la taille de la div 
+       border-radius : permet d'arrondire les bords (50% permet d'avoir l'effet de bulle)
+
+    */
+    background-color: #6C829D;
+    color: white;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0;
+
+}
+
+table.preparation td
+{
+    vertical-align: top;
+}
+
+table.preparation td.etape
+{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+table.preparation tr
+    /* overflow : permet de gérer le debordement d'un contenu
+     syntaxe: *{ overflow: auto}
+    */
+{
+    height: 40px;
+}
+
